@@ -5,7 +5,7 @@ module.exports = (app) => {
     // GET. this is for the url itself
     // 
     app.get('/todo', (req, res) => {
-
+        res.render('todo');
     });
 
     // When user posts a data  
