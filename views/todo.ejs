@@ -18,9 +18,10 @@
         </form>
     </div>
     <ul>
-        <li> Item 1 </li>
-        <li> Item 1 </li>
-        <li> Item 1 </li>
+       <% for (var i = 0; i < todos.length; i ++){ %>
+          
+           <li> <%= todos[i].item %> </li>
+            <% } %>
 
     </ul>
 

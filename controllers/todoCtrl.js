@@ -1,11 +1,12 @@
 // Manipulate data handles, rountes etc.,
+let data = [ {item : 'First List'}, {item : 'Second List'}, {item : 'third List'}  ];
 
 module.exports = (app) => {
 
     // GET. this is for the url itself
     // 
     app.get('/todo', (req, res) => {
-        res.render('todo');
+        res.render('todo', {todos : data});
     });
 
     // When user posts a data  
